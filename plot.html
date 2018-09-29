@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<html lang="en-US">
+<head>
+	<title>The Virago</title>
+	<link rel="icon" href="images\li.ico">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<meta name="description" content="CS2 Project: Comic Strip Website"/>
+	<meta name="keywords" content="HTML, tags, DOCTYPES, CSS, Float, Display, Position, Margin, Padding and Border" />
+	<meta name="author" content="Jopeth Seda, Gab Ramos 10/04/2018" />
+	<meta charset="utf-8">
+	<style>
+	@font-face {
+		font-family: Gotham Light;
+		src: url("images/fonts/Gotham-Light.otf");
+	}
+	
+	@font-face {
+		font-family: Gotham Bold;
+		src: url("images/fonts/Gotham-Bold.otf");
+	}
+	
+	body {
+		font-family: "Gotham Light";
+		background-image: url("images/backgrounds/plot.jpg");
+		background-attachment: fixed;
+	}
+	
+	.sidebar {
+		width: 200px;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		position:fixed;
+		background-color: #373737;
+		color: white;
+		font-size: 17px;
+		line-height: 200%;
+		overflow: hidden;
+		letter-spacing: 5px;
+	}
+		
+	.sidebar a {
+		text-decoration: none;
+		color: rgb(255,255,255,0.5);
+	}
+		
+	.sidebar a:hover {
+		color: white;
+		text-shadow: 2px 2px rgb(0,0,0,0.3);
+	}
+		
+	.sidebar ul li {
+		list-style: none;
+		margin-left: -20px;
+	}
+	
+	h6.top {
+		padding: 4px;
+		color: rgb(255,255,255,0.5);
+		border: 2px solid gray;
+		text-align: center;
+		bottom: 50px;
+		left: 18px;
+		width: 150px;
+		position: absolute;
+	}
+	
+	h6.top:hover {
+		color: white;
+		border: 2px solid white;
+	}
+	
+	h6.name {
+		padding: 4px;
+		color: rgb(255,255,255,0.5);
+		text-align: center;
+		bottom: 120px;
+		left: 18px;
+		width: 150px;
+		position: absolute;
+		line-height: 150%;
+	}
+	
+	h6.name:hover {
+		color: white;
+	}
+	
+	img.logo {
+		width: 175px;
+		height: auto;
+		display: block;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		opacity: 0.5;
+	}
+	
+	img.logo:hover {
+		opacity: 1;
+	}
+	
+	.icons {
+		width: 30px;
+		height: 30px;
+		opacity: 0.5;
+	}
+	
+	.icons:hover {
+		opacity: 1;
+	}
+	
+	.fb {
+		left: 30px;
+		bottom: 30px;
+		position: absolute;
+	}
+	
+	.twitter {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		left: 85px;
+		
+	}
+	
+	.ig {
+		right: 30px;
+		position: absolute;
+		bottom: 30px;
+	}
+	
+	.content {
+		margin-left: 200px;
+	}
+	
+	.article {
+		width: 75%;
+		margin-bottom: 0px;
+		background-color: white;
+		margin-left: auto;
+		margin-right: 15px;
+		padding: 40px;
+		box-shadow: 10px 10px 20px rgb(0,0,0,0.3);
+	}
+	
+	.title {
+		background-color: #373737;
+		color: white;
+		text-align: center;
+		line-height: 100%;
+		width: 500px;
+		height: 200px;
+		letter-spacing: 30px;
+		padding: 30px;
+		font-size: 200%;
+		margin:auto;
+		margin-top: 175px;
+		text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+		box-shadow: 10px 10px 20px rgb(0,0,0,0.3);
+	}
+	
+	h3.subheading {
+		text-align: center;
+		color: #373737;
+		letter-spacing: 10px;
+		text-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+		margin-bottom: 300px;
+	}
+	
+	/* addtl css below*/
+	
+	h1.artitle {
+		font-family: Gotham Bold;
+		color: rgb(0,0,0,0.5);
+		text-align: center;
+		padding: 20px;
+	}
+	
+	p {
+		color: rgb(0,0,0,0.7);
+		text-align: justify;
+		line-height: 200%;
+		font-weight: bold;
+	}
+	
+	img.content {
+		display: block;
+		margin: auto;
+		float: right;
+		padding: 0 15px;
+		width: 300px;
+		height: 300px;
+		filter: grayscale(100%);
+		opacity: 0.5;
+	}
+	
+	img.content:hover {
+		filter: grayscale(0%);
+		opacity: 1;
+	}
+</style>
+</head>
+<body>
+	<div class="sidebar">
+		<img class="logo" src="images/icons/logo.png">
+		<h6 class="name" style="bottom: 130px">RAMOS | SEDA</h6>
+		<h6 class="name" style="font-size: 9px">04  09  2018</h6>
+		<ul>
+			<li><a href="home.html">HOME</li>
+			<li><a href="characters.html">CHARACTERS</a></li>
+			<li><a href="plot.html">PLOT</a></li>
+			<li><a href="webtoon.html">WEBTOON</a></li>
+				<ul>
+					<li><a href="webtoon_1.html">PART 1</a></li>
+					<li><a href="webtoon_1.html">PART 2</a></li>
+					<li><a href="webtoon_1.html">PART n</a></li>
+				</ul>
+			<li><a href="aboutus.html">ABOUT US</a></li>
+		</ul>
+		<div class="top">
+			<a href="#top">
+			<h6 class="top">BACK TO TOP</h6>
+			</a>
+		</div>
+		<div class="icon">
+			<a href="https://www.facebook.com/username"><img class="icons fb" src="images/icons/facebook.png"></a>
+			<a href="https://www.twitter.com/username"><img class="icons twitter" src="images/icons/twitter.png"></a>
+			<a href="https://www.instagram.com/username"><img class="icons ig" src="images/icons/instagram.png"></a>
+		</div>
+	</div>
+	<div class="content">
+		<div class="title">
+			<h3>THE</h3>
+			<h1 style="font-family: Gotham Bold">VIRAGO</h1>
+		</div>
+		<h3 class="subheading">THE PLOT</h3>
+	</div>
+	<div class="article">
+			<h1 class="artitle">PLOT OF THE COMIC</h1>
+			<p>"The Virago" is a webtoon version of the comic strip the creators have already made as part of their project for English. 
+			The comic strip they have made is a modern adaptation of the original Canterbury tale, The Merchant's Tale, so they have decided to impose the concept into the website. 
+			Therefore, the theme of the website is minimalistic, modern, and simple but not simpler.</p>
+			<h1 class="artitle">PLOT OF THE ORIGINAL TALE</h1>
+			<p>The Merchant's Tale tells the great difference between the patient Griselde (The Clerk's Tale) and the horrible virago he married
+			for the past two months. The merchant was asked to tell a story of the evils of marriage, and so he followed.</p>
+			<img src="images/content/merchant.jpg" class="content">
+			<p>His story revolves around an old blind knight named January who married a beautiful young woman called May despite his friends disapproval. 
+			He tried to satisfy his woman's sexual needs but failed to do so. His wife, sexually unsatisfied, then conspires to cheat on him with Damien, his landlord. </p>
+			<p>When blind January decided to take his wife into his garden to have sexual intercourse with her, but she told him she wanted to eat a pear so he helped her up in the tree,
+			where she and Damien had a sexual intercourse instead. But Pluto, the king of the fairies restores January's sight. But May, caught red-handed, convinces her husband that his sight is deceiving him. 
+			The Host prays to God to prevent him from marrying a shrew, like how the Merchant described the wife in his tale.</p>
+	</div>
+</body>
+</html>
